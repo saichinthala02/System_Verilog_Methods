@@ -8,7 +8,7 @@ class eth_pkt;
 		 bit[31:0]crc;
 	rand byte payload[$];
 
-	//--> Print Method with return type and argument
+	//--> Print Method 
 	function void print(string str="Eth_Pkt");
 		$display("-------> %0s <-------",str);
 		$display("preamble=%0d",preamble);
@@ -20,7 +20,7 @@ class eth_pkt;
 		$display("payload=%p",payload);
 	endfunction
 
-	//--> Copy Method
+	//--> Copy Method with return type and argument
 	function eth_pkt copy(eth_pkt p1);
 		eth_pkt temp;
 		temp=new();
@@ -34,7 +34,7 @@ class eth_pkt;
 		return temp;
 	endfunction
 
-	//--> Compare Method
+	//--> Compare Method with return type and arguments
 	function bit compare(eth_pkt p1,p2);
 		if((p1.preamble==p2.preamble)&&
 		   (p1.sof     ==     p2.sof)&&
@@ -90,5 +90,6 @@ endmodule
 # Eth_Pkt-1 and Eth_Pkt-2 are Matched
 # --------------------------------------------------------------
 */
+
 
 
