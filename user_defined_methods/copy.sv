@@ -20,7 +20,7 @@ class eth_pkt;
 		$display("payload=%p",payload);
 	endfunction
 
-	//--> Copy Method
+	//--> Copy Method with return type and argument
 	function eth_pkt copy(eth_pkt p1);
 		eth_pkt temp;
 		temp=new();
@@ -70,3 +70,4 @@ endmodule
 # crc=0
 # payload='{-51, -99, -18, -71, -68, -58, 20, 120, 111, 37, 31, -124, -1, 6}
 */
+
