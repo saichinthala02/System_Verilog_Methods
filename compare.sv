@@ -1,4 +1,4 @@
-//--> Copy Method.
+//--> Compare Method.
 class eth_pkt;
 	rand bit[55:0]preamble;
 	rand bit[7:0]sof;
@@ -90,3 +90,4 @@ endmodule
 # Eth_Pkt-1 and Eth_Pkt-2 are Matched
 # --------------------------------------------------------------
 */
+
