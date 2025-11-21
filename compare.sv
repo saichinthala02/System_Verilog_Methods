@@ -8,7 +8,7 @@ class eth_pkt;
 		 bit[31:0]crc;
 	rand byte payload[$];
 
-	//--> Print Method
+	//--> Print Method with return type and argument
 	function void print(string str="Eth_Pkt");
 		$display("-------> %0s <-------",str);
 		$display("preamble=%0d",preamble);
@@ -90,4 +90,5 @@ endmodule
 # Eth_Pkt-1 and Eth_Pkt-2 are Matched
 # --------------------------------------------------------------
 */
+
 
